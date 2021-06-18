@@ -12,14 +12,14 @@ import moment from 'moment';
 
 const ForecastTitle = ({city}) => {
 
-/*   const locale=moment.locale('fr');
-  const date= moment().format('ddd Do MMM'); */
+    const locale=moment.locale('fr');
+  const date= moment().format('ddd Do MMM');
 
     return(
         <View>
               <ForecastChosenCity  city = {city}/>
               <Text>
-                 {/*  {date} */}
+                 {date}
               </Text> 
           </View>
     );

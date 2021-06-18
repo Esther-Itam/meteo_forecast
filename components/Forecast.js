@@ -30,8 +30,8 @@ class Forecast extends Component {
 					weatherIcon={this.props.forecast.current.weather_icons[0]}
 					weatherDescriptions={this.props.forecast.current.weather_descriptions[0]}
 					temperature={this.props.forecast.current.temperature}
-					temperatureMin={this.props.forecast.current.temperature - 5}
-					temperatureMax={this.props.forecast.current.temperature + 5}
+					temperatureMin={this.props.forecast.current.temperature - 7}
+					temperatureMax={this.props.forecast.current.temperature + 7}
 					windSpeed={this.props.forecast.current.wind_speed}
 					humidity={this.props.forecast.current.humidity}
 				/>
