@@ -45,9 +45,7 @@ export const fetchForecast = (city) => {
        
 		try {
 			
-			const res = await fetch(
-				'http://api.weatherstack.com/current?access_key=f0c5759c8f1df9c1fae305b1b8a5894b&query=cannes'
-			);
+			const res = await fetch ('http://api.weatherstack.com/current?access_key=06e5cd6e82b1724d519965783e0a6fd7&query='+city);
 			if (!res.ok) {
 				const forecast = await res.json();
 				throw new Error(forecast.message);
@@ -57,7 +55,7 @@ export const fetchForecast = (city) => {
 			dispatch(updateForecast(forecast));
 			onSuccess();
 
-			dispatch(toggleLoader(false));
+			/* dispatch(toggleLoader(false)); */
 		} catch (error) {
 			dispatch(setError(error.message));
 			onError();

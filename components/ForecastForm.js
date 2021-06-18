@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { ViewBase, Text, StyleSheet, TextInput, Button, View, SafeAreaView, TouchableOpacity } from 'react-native';
 
-const ForecastForm = ({onChangeText, pressHandler, text}) => {
+const ForecastForm = ({onChangeText, pressHandler, text, onSubmitEditing}) => {
 
 
 	return (
@@ -11,12 +11,9 @@ const ForecastForm = ({onChangeText, pressHandler, text}) => {
 				onChangeText={onChangeText}
 				value={text}
 				placeholder="Rechercher une ville"
+				onSubmitEditing={onSubmitEditing}
 			/>
-			<TouchableOpacity
-        		onPress={pressHandler}
-        		style={{ backgroundColor: 'blue' }}>
-        		<Text style={{ fontSize: 20, color: '#fff' }}>Rechercher</Text>
-      		</TouchableOpacity>
+			
 		</SafeAreaView>
 	);
 };
