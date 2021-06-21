@@ -1,19 +1,12 @@
 import React from 'react';
-import { 
-    View, 
-    Image, 
-    Text,
-    StyleSheet, 
-    TextInput,
-    Dimensions
-} from 'react-native';
+import {View, Text, StyleSheet} from 'react-native';
 
 
 const ForecastChooseCity= ({city}) => {
 
     return(
         <View>
-            <Text>
+            <Text style={styles.title}>
                 {city}
             </Text>
         </View>
@@ -21,5 +14,14 @@ const ForecastChooseCity= ({city}) => {
     
  
 }
+const styles = StyleSheet.create({
 
+    title:{
+        fontSize:62,
+        color:"white",
+        fontWeight:'bold',
+        
+    },
+
+})   
 export default ForecastChooseCity;

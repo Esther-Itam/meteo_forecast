@@ -1,7 +1,7 @@
-import { UPDATE_FORECAST, TOGGLE_LOADER, SET_ERROR, UPDATE_VALUE, CLEAR_VALUE } from '../types';
+import { UPDATE_FORECAST, TOGGLE_LOADER, SET_ERROR, UPDATE_VALUE, CLEAR_VALUE} from '../types';
 
 let initialState = {
-	forecast: {},
+	forecast:{},
 	loader: false,
 	error: '',
 	text:''
@@ -33,7 +33,7 @@ export const forecastReducer = (state = initialState, action) => {
 			return{
 				...state,
 				text:action.text,
-			};		
+			};					
 		default:
 			return state;
 	}
