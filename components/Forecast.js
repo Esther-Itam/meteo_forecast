@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import ForecastTitle from './ForecastTitle';
 import ForecastResult from './ForecastResult';
 import ForecastForm from './ForecastForm';
-import { fetchForecast, updateValue, updateForecast, clearForecast } from '../actions/forecastAction';
+import { fetchForecast, updateValue, updateForecast} from '../actions/forecastAction';
 import { bindActionCreators } from 'redux';
 import background from '../assets/background.png';
 import background_accueil from '../assets/background_accueil.webp'
@@ -117,8 +117,6 @@ const mapDispatchToProps = dispatch => {
 			fetchForecast,
 			updateValue,
 			updateForecast,
-			clearForecast
-			
 		},
 		dispatch)
 };
