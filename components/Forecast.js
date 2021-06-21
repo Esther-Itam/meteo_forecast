@@ -75,7 +75,7 @@ class Forecast extends Component {
 
 const styles = StyleSheet.create({
 	title: {
-		color: 'white',
+		color: 'gray',
 		fontSize:30,
 		fontWeight:"bold",
 		padding:5,
@@ -85,7 +85,7 @@ const styles = StyleSheet.create({
 	},
 	container:{
 		height:812,
-		width:375,
+		width:390,
 		opacity:1,
 		
 	},
